@@ -1,0 +1,7 @@
+# packages && sources
+node_modules
+src
+
+# config files
+.gitignore
+tsconfig.json

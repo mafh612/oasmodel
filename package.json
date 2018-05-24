@@ -1,0 +1,17 @@
+{
+  "name": "oasmodel",
+  "version": "1.0.0",
+  "description": "typescript model for open api specifications",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "author": "mafh612",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "typescript": "^2.8.3"
+  }
+}
