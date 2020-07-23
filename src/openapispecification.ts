@@ -132,7 +132,7 @@ export interface Parameter extends Reference {
 }
 
 export interface OperationIS {
-  [key: string]: Operation|any
+  [key: string]: Operation | any
 }
 
 export interface PathItem extends Reference, OperationIS {
@@ -168,7 +168,6 @@ export interface Response extends Reference {
 }
 
 export interface Schema extends Reference {
-
   title?: string
   multipleOf?: string
   maximum?: number
@@ -186,11 +185,11 @@ export interface Schema extends Reference {
   required?: string[]
   enum?: string[]
   type?: string | Schema
-  allOf?: string | Schema
-  oneOf?: string | Schema
-  anyOf?: string | Schema
-  not?: string | Schema
-  items?: string | Schema
+  allOf?: string | string[] | Schema
+  oneOf?: string | string[] | Schema
+  anyOf?: string | string[] | Schema
+  not?: string | string[] | Schema
+  items?: string | string[] | Schema
   properties?: { [key: string]: Schema }
   additionalProperties?: boolean | Schema
   description?: string
